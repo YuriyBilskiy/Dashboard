@@ -24,3 +24,17 @@ td {
   line-height: 21px;
   letter-spacing: -1%;
 }
+
+@media screen and (min-width: 768px) {
+  .aside {
+    width: 306px;
+    height: 1198px;
+    margin-right: 71px;
+  }
+
+  .customers {
+    width: calc(100% - 306px);
+    margin-top: 41px;
+    margin-left: 20px;
+  }
+}
