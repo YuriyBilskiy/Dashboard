@@ -1,0 +1,197 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="preconnect", href="https://fonts.googleapis.com")
+    link(rel="preconnect", href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Pixelify+Sans&family=Poppins:wght@400;500;600&display=swap", rel="stylesheet")
+    link(rel="stylesheet", href="/main.css")
+    title Dashboard
+  body
+    nav.main-nav.hamburger-menu
+      input#menu__toggle(type="checkbox")
+      label.menu__btn(for="menu__toggle")
+        span
+
+      ul.menu__box
+              li.aside__item
+                a.menu__item(href="#")
+                  img.aside__icon.icon(src="./src/icons/dashboard-icon.svg", alt="dashboard")
+                  | Dashboard
+              li.aside__item
+                a.menu__item(href="#")
+                  img.aside__icon.icon(src="./src/icons/product-icon.svg", alt="product")
+                  | Product
+              li.aside__item
+                a.menu__item.active(href="#")
+                  img.aside__icon.icon(src="./src/icons/customers-icon.svg", alt="customers")
+                  | Customers
+              li.aside__item
+                a.menu__item(href="#")
+                  img.aside__icon.icon(src="./src/icons/income-icon.svg", alt="income")
+                  | Income
+              li.aside__item
+                a.menu__item(href="#")
+                  img.aside__icon.icon(src="./src/icons/promote-icon.svg", alt="promote")
+                  | Promote
+              li.aside__item
+                a.menu__item(href="#")
+                  img.aside__icon.icon(src="./src/icons/help-icon.svg", alt="help")
+                  | Help
+
+    .main
+      aside.aside
+        .aside__top
+          img.aside__image(src="./src/icons/logo.svg", alt="logo")
+          h1.aside__title Dashboard
+            span.aside__subtitle v.01
+        ul.aside__list
+          li.aside__item
+            a.aside__link(href="#")
+              img.aside__icon.icon(src="./src/icons/dashboard-icon.svg", alt="dashboard")
+              | Dashboard
+          li.aside__item
+            a.aside__link(href="#")
+              img.aside__icon.icon(src="./src/icons/product-icon.svg", alt="product")
+              | Product
+          li.aside__item
+            a.aside__link.active(href="#")
+              img.aside__icon.icon(src="./src/icons/customers-icon.svg", alt="customers")
+              | Customers
+          li.aside__item
+            a.aside__link(href="#")
+              img.aside__icon.icon(src="./src/icons/income-icon.svg", alt="income")
+              | Income
+          li.aside__item
+            a.aside__link(href="#")
+              img.aside__icon.icon(src="./src/icons/promote-icon.svg", alt="promote")
+              | Promote
+          li.aside__item
+            a.aside__link(href="#")
+              img.aside__icon.icon(src="./src/icons/help-icon.svg", alt="help")
+              | Help
+        .aside__person
+          img.aside__icon(src="./src/icons/person-icon.svg", alt="person")
+
+          .aside__wrapper
+            h2.aside__title-manager Evano
+            p.aside__subtitle-manager Project Manager
+      section.customers
+        h2.customers__greeting Hello Evano 👋🏼,
+        .customers__wrapper
+          .customers__info
+            h3.customers__title All Customers
+            p.customers__subtitle Active Members
+          .customers__search
+            img.customers__image-search.icon(src="./src/icons/search-icon.svg", alt="search-icon")
+            input.customers__search-input(type="text", placeholder="Search")
+        .customers__table
+          table
+            tr
+              th Customer Name
+              th Company
+              th Phone Number
+              th Email
+              th Country
+              th Status
+
+            tr.customers__row
+              td Jane Cooper
+              td Microsoft
+              td
+                a(href="tel: +2255550118") (225) 555-0118
+              td 
+                a(href="mailto: jane@microsoft.com") jane@microsoft.com 
+              td United States
+              td 
+                button.customers__td-actived Active
+
+              tr.customers__row
+                td Floyd Miles
+                td Yahoo
+                td 
+                  a(href="tel: +2055550100") (205) 555-0100
+                td 
+                  a(href="mailto: floyd@yahoo.com") floyd@yahoo.com
+                td Kiribati
+                td 
+                  button.customers__td-inactive Inactive
+
+              tr.customers__row
+                td Ronald Richards
+                td Adobe
+                td 
+                  a(href="tel: +3025550107") (302) 555-0107
+                td 
+                  a(href="mailto: ronald@adobe.com") ronald@adobe.com 
+                td Israel
+                td 
+                  button.customers__td-inactive Inactive
+
+              tr.customers__row
+                td Marvin McKinney
+                td Tesla
+                td
+                  a(href="tel: +2525550126") (252) 555-0126
+                td 
+                  a(href="mailto: marvin@tesla.com") marvin@tesla.com 
+                td Israel
+                td 
+                  button.customers__td-actived Active
+
+              tr.customers__row
+                td Jerome Bell
+                td Google
+                td
+                  a(href="tel: +6295550129") (629) 555-0129
+                td 
+                  a(href="mailto: jerome@google.com") jerome@google.com 
+                td Réunion
+                td
+                  button.customers__td-actived Active
+
+              tr.customers__row
+                td Kathryn Murphy
+                td Microsoft
+                td
+                  a(href="tel: +4065550120") (406) 555-0120
+                td 
+                  a(href="mailto: kathryn@microsoft.com") kathryn@microsoft.com 
+                td Curaçao
+                td
+                  button.customers__td-actived Active
+
+              tr.customers__row
+                td Jacob Jones
+                td Yahoo
+                td
+                  a(href="tel: +2085550112") (208) 555-0112
+                td 
+                  a(href="mailto: jacob@yahoo.com") jacob@yahoo.com 
+                td Brazil
+                td
+                  button.customers__td-actived Active
+
+              tr.customers__row
+                td Kristin Watson
+                td Facebook
+                td
+                  a(href="tel: +7045550127") (704) 555-0127
+                td 
+                  a(href="mailto: kristin@facebook.com") kristin@facebook.com 
+                td Åland Islands
+                td
+                  button.customers__td-inactive Inactive
+
+        .customers__footer
+          p.customers__footer-subtitle Showing data 1 to 8 of 256K entries
+          .customers__pagination
+            button.customers__button &lt;
+            button.customers__button.button__active 1
+            button.customers__button 2
+            button.customers__button 3
+            button.customers__button 4
+            span.dots ...
+            button.customers__button 40
+            button.customers__button &gt;

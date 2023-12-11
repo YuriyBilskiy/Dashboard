@@ -1,10 +1,17 @@
 .aside {
   position: relative;
+
   
   box-sizing:border-box;
   margin-right: 71px;
   width: 306px;
   height: 1198px;
+
+  &__icon {
+    width: 42px;
+    height: 42px;
+    margin-right: 12px;
+  }
   &__top {
     display: flex;
     margin: 36px 0 65px 28px;
@@ -15,6 +22,10 @@
     margin-right: 8px;
     width: 37px;
     height: 37px;
+  display: flex;
+  justify-content: center; /* Вирівнюємо логотип по горизонталі в центрі */
+  align-items: center; /* Вирівнюємо по вертикалі по верхньому краю */
+
 
     &-manager {
       margin-right: 12px;
@@ -42,9 +53,8 @@
     font-size: 10px;
     line-height: 15px;
     letter-spacing: -1%;
+    margin-left: 4px;
     color: #838383;
-    display: flex;
-    align-self: flex-end;
 
     &-manager {
       color: #757575;
@@ -108,4 +118,11 @@
   text-align: center;
   color:  #FFFFFF;
   
+}
+
+
+@media (max-width: 640px) {
+  .aside {
+    display: none;
+  }
 }

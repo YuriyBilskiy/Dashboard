@@ -46,8 +46,31 @@
       background-color: #F9FBFF;
     border-color: transparent;
     }
+  }
 
-  
+  &__td-actived {
+    height: 29px;
+    width: 80px;
+    text-align: center;
+    padding: 4px 12px 4px 12px;
+    box-sizing: border-box;
+    background-color: #21f4c3;
+    color: #00B087;
+    border: 1px solid #00B087;
+    border-radius: 4px;
+
+  }
+  &__td-inactive {
+    height: 29px;
+    width: 80px;
+    text-align: center;
+    padding: 4px 12px 4px 12px;
+    box-sizing: border-box;
+    background-color: #FFC5C5;
+    color: #DF0404;
+    border: 1px solid #DF0404;
+    border-radius: 4px;
+
   }
   
   &__table {
@@ -80,6 +103,7 @@
     border-radius: 4px;
     padding: 6px 9px 6px 9px;
     cursor: pointer;
+    margin-right: 12px;
   }
 
 }
@@ -92,4 +116,10 @@
 .button__active {
   background-color: #5932EA;
   color: white;
+}
+
+@media (max-width: 640px) {
+  .customers__footer {
+    padding-bottom: 35px;
+  }
 }
