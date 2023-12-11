@@ -1,0 +1,281 @@
+.aside {
+  position: relative;
+  box-sizing: border-box;
+  margin-right: 71px;
+  width: 306px;
+  height: 1198px;
+}
+.aside__top {
+  display: flex;
+  margin: 36px 0 65px 28px;
+  align-items: center;
+}
+.aside__image {
+  margin-right: 8px;
+  width: 37px;
+  height: 37px;
+}
+.aside__image-manager {
+  margin-right: 12px;
+}
+.aside__title {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 39px;
+  letter-spacing: 1%;
+  margin-right: 4px;
+}
+.aside__title-manager {
+  color: #000000;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 1%;
+}
+.aside__subtitle {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: -1%;
+  color: #838383;
+  display: flex;
+  align-self: flex-end;
+}
+.aside__subtitle-manager {
+  color: #757575;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1%;
+}
+.aside__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -1%;
+  color: #9197B3;
+  display: flex;
+  align-items: center;
+  margin-bottom: 29px;
+  position: relative;
+  width: 250px;
+  height: 46px;
+  border-radius: 8px;
+  padding: 11px 8px 11px 11px;
+  box-sizing: border-box;
+}
+.aside__link::after {
+  content: " >";
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 8px;
+}
+.aside__person {
+  display: flex;
+  position: absolute;
+  bottom: 76px;
+  padding-left: 28px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 14px;
+}
+
+.active {
+  background-color: #5932EA;
+  width: 250px;
+  height: 46px;
+  border-radius: 8px;
+  display: flex;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.container {
+  display: flex;
+}
+
+.customers {
+  margin-top: 41px;
+  width: 968px;
+  height: 812px;
+}
+.customers__greeting {
+  margin-bottom: 51px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.customers__wrapper {
+  padding: 30px 44px 41px 38px;
+  display: flex;
+  justify-content: space-between;
+}
+.customers__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: -1%;
+  margin-bottom: 7px;
+}
+.customers__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -1%;
+  color: #16C098;
+}
+.customers__search {
+  padding: 7px 8px;
+  display: flex;
+  align-items: center;
+  width: 216px;
+  height: 38px;
+  background-color: #F9FBFF;
+  border-radius: 10px;
+  border-color: transparent;
+}
+.customers__search-input {
+  background-color: #F9FBFF;
+  border-color: transparent;
+}
+.customers__table {
+  padding-left: 38px;
+  margin-bottom: 32px;
+}
+.customers__row {
+  margin-bottom: 40px;
+}
+.customers__footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 38px;
+}
+.customers__footer-subtitle {
+  color: #B5B7C0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -1%;
+}
+.customers__button {
+  width: 26px;
+  height: 24px;
+  background-color: #F5F5F5;
+  border: 1px;
+  border-radius: 4px;
+  padding: 6px 9px 6px 9px;
+  cursor: pointer;
+}
+
+.dots {
+  cursor: pointer;
+}
+
+.button__active {
+  background-color: #5932EA;
+  color: white;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: "Poppins", sans-serif;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+table {
+  height: 587px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -1%;
+  color: #B5B7C0;
+}
+
+td {
+  color: #292D32;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -1%;
+}
+
+/*# sourceMappingURL=main.css.map */
