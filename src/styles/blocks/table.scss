@@ -33,17 +33,15 @@ td {
   th,
   td {
     padding: 8px;
-    font-size: 12px;
+    font-size: 10px;
   }
 }
 
-@media (max-width: 340px) {
-  table {
-    width: 250px;
-  }
+@media (max-width: 550px) {
+
   th,
   td {
     padding: 4px;
-    font-size: 10px;
+    font-size: 8px;
   }
 }

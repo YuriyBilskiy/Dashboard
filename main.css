@@ -235,7 +235,13 @@
     margin-right: 6px;
   }
 }
-@media (max-width: 530px) {
+@media (max-width: 550px) {
+  .customers__title {
+    font-size: 16px;
+  }
+  .customers__subtitle {
+    font-size: 12px;
+  }
   .customers__footer {
     display: flex;
     flex-direction: column;
@@ -244,6 +250,17 @@
   }
   .customers__footer-subtitle {
     margin-bottom: 15px;
+  }
+  .customers__search {
+    width: 150px;
+    height: 16px;
+  }
+  .customers__search-input {
+    font-size: 10px;
+  }
+  .customers__image-search {
+    width: 12px;
+    height: 12px;
   }
 }
 h1,
@@ -264,12 +281,9 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-html {
-  box-sizing: border-box;
-}
-
+html,
 body {
-  line-height: 1;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -355,31 +369,24 @@ td {
   th,
   td {
     padding: 8px;
-    font-size: 12px;
+    font-size: 10px;
   }
 }
-@media (max-width: 340px) {
-  table {
-    width: 250px;
-  }
+@media (max-width: 550px) {
   th,
   td {
     padding: 4px;
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 #menu__toggle {
   opacity: 0;
 }
 
-#menu__toggle:checked ~ body {
-  overflow: hidden;
-}
-
 .menu__btn {
   display: flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
   width: 26px;
@@ -462,14 +469,22 @@ td {
   left: 0;
 }
 
-#menu__toggle:checked ~ body {
+body {
+  overflow: auto;
+}
+
+body.page__menu:target {
   overflow: hidden;
 }
 
 @media (max-width: 770px) {
+  body.page:target {
+    overflow: hidden;
+  }
   .main-nav,
   .hamburger-menu {
     display: block;
+    overflow: hidden;
   }
 }
 

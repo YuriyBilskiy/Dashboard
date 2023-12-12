@@ -2,13 +2,11 @@
   opacity: 0;
 
 }
-#menu__toggle:checked ~ body {
-  overflow: hidden;
-}
+
 .menu__btn {
   display: flex;
   align-items: center;
-  position: fixed;
+  position: absolute;
   top: 20px;
   left: 20px;
   width: 26px;
@@ -99,15 +97,25 @@
   left: 0;
 }
 
-#menu__toggle:checked ~ body {
+body {
+  overflow: auto;
+}
+
+body.page__menu:target {
   overflow: hidden;
 }
 
 @media (max-width: 770px) {
+  body.page:target {
+    overflow: hidden;
+  }
   .main-nav,
   .hamburger-menu {
     display: block;
+    overflow: hidden;
   }
 
 
 }
+
+
