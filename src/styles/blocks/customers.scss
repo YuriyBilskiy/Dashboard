@@ -5,7 +5,7 @@
 
   &__greeting {
     margin-bottom: 51px;
-    font-weight: 500;
+    font-weight: $font-weight-middle;
     font-size: 24px;
     line-height: 36px;
   }
@@ -17,18 +17,18 @@
   }
 
   &__title {
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 33px;
-    letter-spacing: -1%;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+    letter-spacing: $letter-spacing-small;
     margin-bottom: 7px;
   }
 
   &__subtitle {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: -1%;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+    letter-spacing: $letter-spacing-small;
     color: #16C098;
   }
 
@@ -38,12 +38,12 @@
     align-items: center;
     width: 216px;
     height: 38px;
-    background-color: #F9FBFF;
+    background-color: $background-color-white;
     border-radius: 10px;
     border-color: transparent;
 
     &-input {
-      background-color: #F9FBFF;
+      background-color: $background-color-white;
     border-color: transparent;
     }
   }
@@ -55,8 +55,8 @@
     padding: 4px 12px 4px 12px;
     box-sizing: border-box;
     background-color: #21f4c3;
-    color: #00B087;
-    border: 1px solid #00B087;
+    color: $green-color;
+    border: 1px solid $green-color;
     border-radius: 4px;
 
   }
@@ -88,10 +88,10 @@
     padding-left: 38px;
     &-subtitle {
       color: #B5B7C0;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 21px;
-      letter-spacing: -1%;
+      font-size: $font-size-small;
+      font-weight: $font-weight-middle;
+      line-height: $line-height-small;
+      letter-spacing: $letter-spacing-small;
     }
   }
 
@@ -122,6 +122,7 @@
   .customers {
     &__footer {
       padding-bottom: 35px;
+      justify-content: space-around;
     }
 
     &__greeting {

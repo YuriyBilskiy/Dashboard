@@ -22,9 +22,9 @@
     margin-right: 8px;
     width: 37px;
     height: 37px;
-  display: flex;
-  justify-content: center; /* Вирівнюємо логотип по горизонталі в центрі */
-  align-items: center; /* Вирівнюємо по вертикалі по верхньому краю */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
 
 
     &-manager {
@@ -33,7 +33,7 @@
   }
 
   &__title {
-    font-weight: 600;
+    font-weight: $font-weight-bold;
     font-size: 26px;
     line-height: 39px;
     letter-spacing: 1%;
@@ -41,35 +41,35 @@
 
     &-manager {
       color: #000000;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 21px;
-      letter-spacing: 1%;
+      font-weight: $font-weight-middle;
+      font-size: $font-size-small;
+      line-height: $line-height-small;
+      letter-spacing: $letter-spacing-large;
     }
   }
 
   &__subtitle {
-    font-weight: 500;
+    font-weight: $font-weight-middle;
     font-size: 10px;
     line-height: 15px;
-    letter-spacing: -1%;
+    letter-spacing: $letter-spacing-small;
     margin-left: 4px;
     color: #838383;
 
     &-manager {
       color: #757575;
-      font-weight: 400;
+      font-weight: $font-weight-normal;
       font-size: 12px;
       line-height: 18px;
-      letter-spacing: 1%;
+      letter-spacing: $letter-spacing-large;;
     }
   }
-  
+
   &__link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: -1%;
+    font-weight: $font-weight-middle;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+    letter-spacing: $letter-spacing-small;
     color: #9197B3;
     display: flex;
     align-items: center;
